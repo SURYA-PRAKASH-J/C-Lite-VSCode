@@ -1,0 +1,37 @@
+
+{
+  "name": "clite-language-support",
+  "displayName": "Clite Language Support",
+  "description": "Syntax highlighting for the Clite scripting language",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "clite",
+        "aliases": [
+          "Clite",
+          "clite"
+        ],
+        "extensions": [
+          ".clite",
+          ".cl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "clite",
+        "scopeName": "source.clite",
+        "path": "./syntaxes/clite.tmLanguage.json"
+      }
+    ]
+  }
+}
